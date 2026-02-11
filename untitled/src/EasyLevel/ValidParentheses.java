@@ -7,7 +7,7 @@ public class ValidParentheses {
     public static void main(String[] args) {
         System.out.println(isValid("{{}}"));
     }
-    public static boolean isValid(String s) {
+    private static boolean isValid(String s) {
         Deque<Character> stack = new ArrayDeque<>();
         if(s.length() < 2)return false;
 
